@@ -11,11 +11,10 @@ let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Eng
 console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
 console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 
-let list = document.getElementById("DataPekerjaanIT");
-pekerjaanIT.forEach((item)=>{
+
+let list = document.getElementById("dataPekerjaan");
+pekerjaanIT.forEach((item) => {
     let li = document.createElement("li");
     li.innerText = item;
     list.appendChild(li);
-  })
-
-
+  });
