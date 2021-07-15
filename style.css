@@ -4,7 +4,7 @@ ul {
     font: 13px Verdana;
   }
   
-  ul>li>a {
-    color: red;
-    text-transform: capitalize
-  }
+ul>li {
+    font-color: black;
+}
+
