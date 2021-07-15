@@ -11,5 +11,15 @@ let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Eng
 console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
 console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 
-document.getElementById("pekerjaanITLength").innerHTML = pekerjaanIT.length;
-document.getElementById("pekerjaanITData").innerHTML = pekerjaanIT.length;
+let DataPekerjaanIT = document.getElementById('ul');
+
+
+for (var i = 0; i < array.length; i++) {
+  var li = document.createElement("li");
+  var link = document.createElement("a");
+  link.setAttribute('href', '#');
+  li.appendChild(link);
+  var text = document.createTextNode(array[i]);
+  link.appendChild(text);
+  DataPekerjaanIT.insertBefore(li, DataPekerjaanIT.childNodes[i]);
+}

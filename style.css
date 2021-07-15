@@ -1,1 +1,10 @@
-/* */
+/*Soal No. 1*/
+
+ul {
+    font: 13px Verdana;
+  }
+  
+  ul>li>a {
+    color: red;
+    text-transform: capitalize
+  }
