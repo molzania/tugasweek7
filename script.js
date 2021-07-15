@@ -14,8 +14,8 @@ console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 let select = document.getElementById('ul');
 
 
-for (var i = 0; i < array.length; i++) {
-  var li = document.createElement("li");
+for (let i = 0; i < array.length; i++) {
+  let li = document.createElement("li");
   var link = document.createElement("a");
   link.setAttribute('href', '#');
   li.appendChild(link);
@@ -23,3 +23,5 @@ for (var i = 0; i < array.length; i++) {
   link.appendChild(text);
   select.insertBefore(li, select.childNodes[i]);
 }
+
+
