@@ -11,7 +11,8 @@ let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Eng
 console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
 console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 
-document.getElementById("jumlahPekerjaanIT").innerHTML = 
+document.getElementById("jumlahPekerjaanIT").innerHTML = pekerjaanIT.length;
+
 
 //Jawaban Soal Nomor 2//
 //Buatlah sebuah data array yang berisi nama pada tim teman-teman.
@@ -28,4 +29,14 @@ console.log("Tim", team1, team2);
 document.getElementById("team1").innerHTML = team1;
 document.getElementById("team2").innerHTML = team2;
 
+//Jawaban Soal Nomor 3//
+//Diberikan 1 data array [3, 5, 7, 9, 11]
+//Buat sebuah program untuk membuat Array baru dari hasil perkalian array sebelumnya dengan perkalian 5.
+//Tampilkan pada console.log
 
+let a = [3,5,7,9,11];
+let b = a.map(function(x){
+    return x * 5;
+});
+
+console.log(b);
