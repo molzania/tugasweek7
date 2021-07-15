@@ -40,3 +40,33 @@ let b = a.map(function(x){
 });
 
 console.log(b);
+
+document.getElementById("soal3").innerHTML = b;
+
+//Jawaban Soal Nomor 4//
+//Tersedia 2 data Array. Tugas kita adalah untuk cek apakah ada nilai yang sama pada kedua Array.
+//Array pertama = [‘Math’, ‘English’, ‘Programming’]
+//Array kedua = [‘Geography’, ‘Spanish’, ‘Programming’]
+//Program akan mengembalikan nilai TRUE or FALSE
+
+const pelajaran1 = ["Math", "English", "Programming"];
+const pelajaran2 = ["Geography", "Spanish", "Programming"];
+
+function CekPelajaran(pelajaran1, pelajaran2) {
+    return pelajaran1.some(item => pelajaran2.includes(item))
+};
+
+CekPelajaran(pelajaran1,pelajaran2);
+
+document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2);
+
+//Jawaban Soal Nomor 5//
+//Buatlah sebuah aplikasi twitter untuk membuat sebuah tweet dan menampilkannya.
+//Gunakan Array untuk menampung data tweet
+//Contoh UI pada slide selanjutnya
+
+
+
+
+
+  
