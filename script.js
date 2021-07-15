@@ -11,17 +11,11 @@ let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Eng
 console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
 console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 
-let select = document.getElementById('ul');
-
-
-for (let i = 0; i < array.length; i++) {
-  let li = document.createElement("li");
-  var link = document.createElement("a");
-  link.setAttribute('href', '#');
-  li.appendChild(link);
-  var text = document.createTextNode(array[i]);
-  link.appendChild(text);
-  select.insertBefore(li, select.childNodes[i]);
-}
+let list = document.getElementById("DataPekerjaanIT");
+pekerjaanIT.forEach((item)=>{
+    let li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+  })
 
 
