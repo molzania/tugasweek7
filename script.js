@@ -11,7 +11,7 @@ let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Eng
 console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
 console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 
-let DataPekerjaanIT = document.getElementById('ul');
+let select = document.getElementById('ul');
 
 
 for (var i = 0; i < array.length; i++) {
@@ -21,5 +21,5 @@ for (var i = 0; i < array.length; i++) {
   li.appendChild(link);
   var text = document.createTextNode(array[i]);
   link.appendChild(text);
-  DataPekerjaanIT.insertBefore(li, DataPekerjaanIT.childNodes[i]);
+  select.insertBefore(li, select.childNodes[i]);
 }
