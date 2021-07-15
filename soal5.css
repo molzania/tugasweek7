@@ -16,8 +16,15 @@ h2{
     text-align: center;
 }
 
+#right{
+    display: flex;
+    flex-direction: column;
+
+}
 p{
     text-align: justify;
+    margin-right: 150px;
+    margin-left:150px;
 }
 
 button{
@@ -29,7 +36,7 @@ button{
     text-align: center;
     text-decoration: none;
     display: flex;
-    flex-direction: column;
+    float:right;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -41,5 +48,6 @@ textarea{
     margin-right: auto;
     width: 300px;
     height: 150px;
+    margin-bottom:20px;
 }
 
