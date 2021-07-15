@@ -5,11 +5,13 @@
 //Gunakan Console.log
 //Tampilkan data tersebut pada Halaman HTML menggunakan list tag
 
-let data = ['Software Developer', "Database Administrator", "Hardware Engineer", 
+let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Engineer", 
 "System Analyst", "Network Architect" ];
  
-console.log("Jumlah Pekerjaan IT : " + data.length);
-console.log("Nama Pekerjaan IT : " + data);
+console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
+console.log("Nama Pekerjaan IT : " + pekerjaanIT);
+
+document.getElementById("jumlahPekerjaanIT").innerHTML = 
 
 //Jawaban Soal Nomor 2//
 //Buatlah sebuah data array yang berisi nama pada tim teman-teman.
@@ -23,5 +25,7 @@ const team2=allMember.slice(2,4);
 
 console.log("Tim", team1, team2);
 
+document.getElementById("team1").innerHTML = team1;
+document.getElementById("team2").innerHTML = team2;
 
 
