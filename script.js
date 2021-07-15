@@ -5,15 +5,15 @@
 //Gunakan Console.log
 //Tampilkan data tersebut pada Halaman HTML menggunakan list tag
 
-let pekerjaanIT = ['Software Developer', "Database Administrator", "Hardware Engineer", 
+let data = ['Software Developer', "Database Administrator", "Hardware Engineer", 
 "System Analyst", "Network Architect" ];
  
-console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
-console.log("Nama Pekerjaan IT : " + pekerjaanIT);
+console.log("Jumlah Pekerjaan IT : " + data.length);
+console.log("Nama Pekerjaan IT : " + data);
 
 
-let list = document.getElementById("dataPekerjaan");
-pekerjaanIT.forEach((item) => {
+let list = document.getElementById("myList");
+data.forEach((item) => {
     let li = document.createElement("li");
     li.innerText = item;
     list.appendChild(li);
