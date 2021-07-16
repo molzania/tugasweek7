@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+h1{
+    padding-top: 30px;
+    color:cornflowerblue;
+}
+form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h2{
+    color:cornflowerblue;
+}
+
+#SubmitSoal6{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#userName {
+    width: 200px;
+    height: 30px;
+    margin-bottom:5px;
+}
+
+#password{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+}
