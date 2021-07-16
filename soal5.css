@@ -31,18 +31,17 @@ p{
     padding-right:30px;
 }
 
-button{
+#SubmitSoal5{
     background-color:purple;
     border: none;
     color: white;
     display: flex;
-    float: right;
+    float: left;
     padding: 15px 32px;
-    margin-left:20px;
+    margin-left:375px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
 }
 
@@ -55,3 +54,4 @@ textarea{
     height: 150px;
     margin-bottom:20px;
 }
+
