@@ -74,7 +74,23 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Tampilkan data setiap user melakukan registrasi
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
 
+
 //Jawaban Soal Nomor 7//
 //Buat 1 buah form contact us lalu tampilkan inputnya ketika user melakukan event onclick
 
+contactForm = (event) => {
+    event.preventDefault();
+    console.log(document.getElementById("name").value);
+    console.log(document.getElementById("email").value);
+    console.log(document.getElementById("message").value);
+
+    let emailData = document.getElementById("email").value;
+    if (emailData == "1"){
+        console.log("Mohon masukkan alamat email yang benar");
+    }
+}
+
+document.getElementById("name").value="";
+document.getElementById("email").value="";
+document.getElementById("message").value="";
   
