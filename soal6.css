@@ -4,6 +4,7 @@ body{
     align-items: center;
     align-content: space-between;
     font-family: 'Ubuntu', sans-serif;
+    background-color: whitesmoke;
 }
 
 h1{
