@@ -12,7 +12,7 @@ console.log("Jumlah Pekerjaan IT : " + pekerjaanIT.length);
 console.log("Nama Pekerjaan IT : " + pekerjaanIT);
 
 document.getElementById("jumlahPekerjaanIT").innerHTML = pekerjaanIT.length;
-
+document.getElementById("namaPekerjaanIT").innerHTML = pekerjaanIT;
 
 //Jawaban Soal Nomor 2//
 //Buatlah sebuah data array yang berisi nama pada tim teman-teman.
@@ -65,6 +65,14 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Gunakan Array untuk menampung data tweet
 //Contoh UI pada slide selanjutnya
 
+//Jawaban Soal Nomor 6//
+//Buatlah sebuah program registrasi berisi username dan password
+//Lakukan validasi berikut
+//Username minimal 6 karakter
+//Password minimal 8 karakter
+//Saat user melakukan registrasi simpan data didalam Array
+//Tampilkan data setiap user melakukan registrasi
+//Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
 
 
 
