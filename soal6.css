@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     align-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 h1{
