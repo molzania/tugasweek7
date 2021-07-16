@@ -52,13 +52,3 @@ textarea{
     height: 150px;
     margin-bottom:20px;
 }
-
-@media screen and (max-width:780px) {
-
-div{
-    display: flex;
-    flex-direction: column;
-}
-
-
-}
