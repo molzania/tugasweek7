@@ -82,7 +82,14 @@ if (password.length <= 8){
 console.log("password harus minimal 8 karakter");
 }
 
-
+function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 
 
 
