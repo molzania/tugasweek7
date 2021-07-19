@@ -91,7 +91,10 @@ function gantiString() {
     }
   }
 
-
+let dataSoal6 =  [];
+Soal6value1 = document.getElementById("userName").value;
+Soal6value2 = document.getElementById("password").value;
+dataSoal6.push(Soal6value1, Soal6value2);
 
 //Jawaban Soal Nomor 7//
 //Buat 1 buah form contact us lalu tampilkan inputnya ketika user melakukan event onclick
