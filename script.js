@@ -78,15 +78,13 @@ const password = "PecintaHujan";
 
 function validateForm6() {
     let form6 = document.forms["form6"]["userName"]["password"].value;
-    if (form6 == "") {
-      alert("Tidak boleh dibiarkan kosong!");
-      return false;
-    }
     if (userName.length <= 6){
-        document.getElementById("userName").value = "Password harus minimal 6 karakter";
+        alert("Username harus minimal 6 karakter");
+        return false;
     }
     if (password.length <= 8){
-    document.getElementById("password").value = "Password harus minimal 8 karakter";
+        alert("Password harus minimal 6 karakter");
+        return false;
     }
   }
 
