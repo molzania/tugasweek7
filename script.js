@@ -75,18 +75,12 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
 const userName = "Molzania";
 const password = "PecintaHujan";
-
-function validateForm6() {
-    let form6 = document.forms["form6"]["userName"]["password"].value;
     if (userName.length <= 6){
-        alert("Username harus minimal 6 karakter");
-        return false;
+        console.log("Username harus minimal 6 karakter");
     }
     if (password.length <= 8){
-        alert("Password harus minimal 6 karakter");
-        return false;
+        console.log("Password harus minimal 6 karakter");
     }
-  }
 
 function gantiString() {
     var x = document.getElementById("password");
