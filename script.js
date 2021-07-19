@@ -73,7 +73,14 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat user melakukan registrasi simpan data didalam Array
 //Tampilkan data setiap user melakukan registrasi
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
-
+function myFunction() {
+    var x = document.getElementsById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 
 //Jawaban Soal Nomor 7//
 //Buat 1 buah form contact us lalu tampilkan inputnya ketika user melakukan event onclick
