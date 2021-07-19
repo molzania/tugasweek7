@@ -75,12 +75,20 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
 const userName = "Molzania";
 const password = "PecintaHujan";
-if (userName.length <= 6){
-    document.getElementById("userName").value = "Password harus minimal 6 karakter";
-}
-if (password.length <= 8){
-document.getElementById("password").value = "Password harus minimal 8 karakter";
-}
+
+function validateForm6() {
+    let form6 = document.forms["form6"]["userName"]["password"].value;
+    if (form6 == "") {
+      alert("Tidak boleh dibiarkan kosong!");
+      return false;
+    }
+    if (userName.length <= 6){
+        document.getElementById("userName").value = "Password harus minimal 6 karakter";
+    }
+    if (password.length <= 8){
+    document.getElementById("password").value = "Password harus minimal 8 karakter";
+    }
+  }
 
 function myFunction() {
     var x = document.getElementById("password");
