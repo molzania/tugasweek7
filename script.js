@@ -76,10 +76,10 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 const userName = "Ma";
 const password = "P";
 if (userName.length <= 6){
-    console.log("userName harus minimal 6 karakter");
+    document.getElementById("userName").value = "Password harus minimal 6 karakter";
 }
 if (password.length <= 8){
-console.log("password harus minimal 8 karakter");
+document.getElementById("password").value = "Password harus minimal 8 karakter";
 }
 
 function myFunction() {
