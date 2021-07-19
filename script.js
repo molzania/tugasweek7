@@ -73,8 +73,8 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat user melakukan registrasi simpan data didalam Array
 //Tampilkan data setiap user melakukan registrasi
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
-const userName = "Molzania";
-const password = "PecintaHujan";
+let userName = "Molzania";
+let password = "PecintaHujan";
     if (userName.length <= 6){
         console.log("Username harus minimal 6 karakter");
     }
