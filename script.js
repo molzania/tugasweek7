@@ -128,7 +128,7 @@ function isEmail(email) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    fields.firstName = document.getElementById('Name');
+    fields.name = document.getElementById('name');
     fields.email = document.getElementById('email');
     fields.message = document.getElementById('message');
    })
