@@ -64,6 +64,10 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Buatlah sebuah aplikasi twitter untuk membuat sebuah tweet dan menampilkannya.
 //Gunakan Array untuk menampung data tweet
 //Contoh UI pada slide selanjutnya
+//Inputan → kasih id → document.getElementsById(‘tweet’).value
+//tweet.push(tweet)
+//for(let i = 0; i < tweet.length; i++){
+//document.write(tweet[i])}
 
 //Jawaban Soal Nomor 6//
 //Buatlah sebuah program registrasi berisi username dan password
@@ -73,8 +77,13 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat user melakukan registrasi simpan data didalam Array
 //Tampilkan data setiap user melakukan registrasi
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
+//Bikin inputan 2 username, password → kasih id → document.getElementsById(‘usrnm’).value
+//document.getElementsById(‘passwd’).value
+//array.push(username, password)
+
 const userName = "Ma";
 const password = "P";
+
 if (userName.length <= 6){
     console.log("userName harus minimal 6 karakter");
 }
