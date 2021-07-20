@@ -106,21 +106,21 @@ dataSoal6.push(Soal6value1, Soal6value2);
 //Jawaban Soal Nomor 7//
 //Buat 1 buah form contact us lalu tampilkan inputnya ketika user melakukan event onclick
 
-contactForm = (event) => {
-    event.preventDefault();
-    console.log(document.getElementById("name").value);
-    console.log(document.getElementById("email").value);
-    console.log(document.getElementById("message").value);
+// contactForm = (event) => {
+//     event.preventDefault();
+//     console.log(document.getElementById("name").value);
+//     console.log(document.getElementById("email").value);
+//     console.log(document.getElementById("message").value);
 
-    let emailData = document.getElementById("email").value;
-    if (emailData == "1"){
-        console.log("Mohon masukkan alamat email yang benar");
-    }
-}
+//     let emailData = document.getElementById("email").value;
+//     if (emailData == "1"){
+//         console.log("Mohon masukkan alamat email yang benar");
+//     }
+//  }
 
-document.getElementById("name").value="";
-document.getElementById("email").value="";
-document.getElementById("message").value="";
+// document.getElementById("name").value="";
+// document.getElementById("email").value="";
+// document.getElementById("message").value="";
   
 function isEmail(email) {
         let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
