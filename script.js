@@ -73,22 +73,14 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat user melakukan registrasi simpan data didalam Array
 //Tampilkan data setiap user melakukan registrasi
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
-let userName = "Molzania";
-let password = "PecintaHujan";
-
-function isPasswordValid(password) {
-    if (password.length > 8) {
-    return true;
-    }
-    return false
-   }
- 
-   function isuserNameValid(userName) {
-    if (userName.length > 6) {
-    return true;
-    }
-    return false
-   }
+const userName = "Ma";
+const password = "P";
+if (userName.length <= 6){
+    console.log("userName harus minimal 6 karakter");
+}
+if (password.length <= 8){
+console.log("password harus minimal 8 karakter");
+}
 
 function gantiString() {
     var x = document.getElementById("password");
@@ -138,4 +130,4 @@ document.addEventListener("DOMContentLoaded", function() {
    })
 
    var dataSoal7 = {};
-   
+

@@ -43,3 +43,11 @@ h2{
     height: 30px;
     margin-bottom: 10px;
 }
+
+#SubmitSoal6:hover {background-color:blue;}
+
+#SubmitSoal6:active {
+  background-color:rgb(176, 195, 255);
+  box-shadow: 0 3px rgb(63, 73, 117);
+  transform: translateY(4px);
+}
