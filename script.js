@@ -75,12 +75,19 @@ document.getElementById("soal4").innerHTML = CekPelajaran(pelajaran1,pelajaran2)
 //Saat password ditampilkan, ganti dengan string yang berbeda. Gunakan replace method.
 let userName = "Molzania";
 let password = "PecintaHujan";
-    if (userName.length <= 6){
-        console.log("Username harus minimal 6 karakter");
+function isPasswordValid(password) {
+    if (password.length > 8) {
+    return true;
     }
-    if (password.length <= 8){
-        console.log("Password harus minimal 6 karakter");
+    return false
+   }
+ 
+   function isuserNameValid(userName) {
+    if (userName.length > 6) {
+    return true;
     }
+    return false
+   }
 
 function gantiString() {
     var x = document.getElementById("password");
@@ -115,3 +122,15 @@ document.getElementById("name").value="";
 document.getElementById("email").value="";
 document.getElementById("message").value="";
   
+function isEmail(email) {
+        let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+        return regex.test(String(email).toLowerCase());
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    fields.firstName = document.getElementById('Name');
+    fields.email = document.getElementById('email');
+    fields.message = document.getElementById('message');
+   })
+
+   var dataSoal7 = {};
