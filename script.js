@@ -156,6 +156,19 @@ document.addEventListener("DOMContentLoaded", function() {
   return valid;
  }
 
+ function fieldValidation(field, validationFunction) {
+  if (field == null) return false;
+ 
+  let isFieldValid = validationFunction(field.value)
+  if (!isFieldValid) {
+  field.className = 'placeholderRed';
+  } else {
+  field.className = '';
+  }
+ 
+  return isFieldValid;
+ }
+
  class User {
   constructor(name, email, message) {
   this.name = name;
