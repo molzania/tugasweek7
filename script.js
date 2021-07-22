@@ -108,6 +108,11 @@ dataSoal6.push(Soal6value1, Soal6value2);
 document.getElementById("userName").value = document.getElementById("showuserName").innerHTML;
 document.getElementById("password").value = document.getElementById("showPassword").innerHTML;
 
+function form6() {
+  var userName=document.getElementById("userName").value;
+  var password=document.getElementById("password").value;
+}
+
 //Jawaban Soal Nomor 7//
 //Buat 1 buah form contact us lalu tampilkan inputnya ketika user melakukan event onclick
 
@@ -126,17 +131,15 @@ document.getElementById("password").value = document.getElementById("showPasswor
 // document.getElementById("name").value="";
 // document.getElementById("email").value="";
 // document.getElementById("message").value="";
+
+let contactForm = {nama:'Molly', email:'me@molzania.com', pesan: 'Aku Cinta Indonesia'};
   
-function isEmail(email) {
-        let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-        return regex.test(String(email).toLowerCase());
+console.log(contactForm);
+
+function form7() {
+  var nama=document.getElementById("name").value;
+  var email=document.getElementById("email").value;
+  var pesan=document.getElementById("message").value;
+
+  
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    fields.name = document.getElementById('name');
-    fields.email = document.getElementById('email');
-    fields.message = document.getElementById('message');
-   })
-
-   var dataSoal7 = {};
-
