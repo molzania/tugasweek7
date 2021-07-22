@@ -131,7 +131,7 @@ function form6() {
 
 var fields = {};
 document.addEventListener("DOMContentLoaded", function() {
-  fields.Name = document.getElementById('name');
+  fields.name = document.getElementById('name');
   fields.email = document.getElementById('email');
   fields.message = document.getElementById('message');
  })
