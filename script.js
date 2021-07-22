@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
  class User {
   constructor(name, email, message) {
-  this.firstName = name;
+  this.name = name;
   this.email = email;
   this.message = message;
   }
