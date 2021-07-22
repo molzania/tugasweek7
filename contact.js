@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
    if (isValid()) {
      let usr = new User(name.value, email.value, message.value);
 
-     alert('$(usr.name) terima kasih telah mendaftar.');
+     alert('$(user.name) terima kasih telah mendaftar.');
    } else {
      alert('Ada error nih.. Perbaiki, ya.');
    }
