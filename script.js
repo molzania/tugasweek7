@@ -129,10 +129,6 @@ function form6() {
 // document.getElementById("email").value="";
 // document.getElementById("message").value="";
 
-let contactForm = {nama:'Molly', email:'me@molzania.com', pesan: 'Aku Cinta Indonesia'};
-  
-console.log(contactForm);
-
 var fields = {};
 document.addEventListener("DOMContentLoaded", function() {
   fields.Name = document.getElementById('name');
@@ -168,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
  }
 
- function sendContact() {
+ function SendContact() {
    if (isValid()) {
      let usr = new User(name.value, email.value, message.value);
 
