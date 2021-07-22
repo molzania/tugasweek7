@@ -105,12 +105,9 @@ Soal6value1 = document.getElementById("userName").value;
 Soal6value2 = document.getElementById("password").value;
 dataSoal6.push(Soal6value1, Soal6value2);
 
-document.getElementById("userName").value = document.getElementById("showuserName").innerHTML;
-document.getElementById("password").value = document.getElementById("showPassword").innerHTML;
-
 function form6() {
-  var userName=document.getElementById("userName").value;
-  var password=document.getElementById("password").value;
+  var userName=document.getElementById("showuserName").value;
+  var password=document.getElementById("showPassword").value;
 }
 
 //Jawaban Soal Nomor 7//
@@ -136,10 +133,19 @@ let contactForm = {nama:'Molly', email:'me@molzania.com', pesan: 'Aku Cinta Indo
   
 console.log(contactForm);
 
-function form7() {
-  var nama=document.getElementById("name").value;
-  var email=document.getElementById("email").value;
-  var pesan=document.getElementById("message").value;
+var fields = {};
+document.addEventListener("DOMContentLoaded", function() {
+  fields.Name = document.getElementById('name');
+  fields.email = document.getElementById('email');
+  fields.message = document.getElementById('message');
+ })
 
-  
-}
+ function isNotEmpty(value) {
+  if (value == null || typeof value == 'undefined' ) return false;
+  return (value.length > 0);
+ }
+
+ function isEmail(email) {
+  let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  return regex.test(String(email).toLowerCase());
+ }
