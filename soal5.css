@@ -60,6 +60,7 @@ label {
     font-size: 12px;;
 }
 
-#message {
-    
+#tweets{
+    padding-left: 50px;
+    padding-right: 50px;
 }

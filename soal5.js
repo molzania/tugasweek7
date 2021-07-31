@@ -31,14 +31,15 @@
 // } 
 
 var inputArray = [];
-var input = document.getElementById('tweet');
-var screen = document.getElementById('tweets');
+var input = document.getElementById("tweet");
+var screen = document.getElementById("tweets");
 
 function updateTweet() {
     inputArray.push(input.value);
-    screen.innerHTML = input.value;
+    screen.innerHTML = input.value; 
+    screen.innerHTML = inputArray + "<br/>";
 };
 
-function display() {
-          screen.innerHTML = inputArray;
- };
+// function display() {
+//           screen.innerHTML = inputArray;
+//  };

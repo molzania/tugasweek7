@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="left">
-        <form method="get" id="form1">
+        <form method="POST" id="form1" onsubmit="return false">
         <h2>Create Tweet</h2>
         <textarea id="tweet" placeholder="Tweet di sini :"></textarea>
         <button type="submit" form="form1" id="SubmitSoal5" value="Submit" onclick="updateTweet()">Submit</button>
@@ -20,9 +20,8 @@
     </div>
     <div id="right">
         <h2>Your Tweet</h2>
-        <p id="tweets"></p>
-        <button type="button" id="display" onclick="display()">Display</button>
+        <div id="tweets"></div>
     </div>
-    <script src="script.js" type="text/javascript"></script>
+    <script src="soal5.js" type="text/javascript"></script>
 </body>
 </html>
