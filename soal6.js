@@ -10,15 +10,15 @@
 //document.getElementsById(‘passwd’).value
 //array.push(username, password)
 
-const userName = "Ma";
-const password = "P";
+// const userName = "Ma";
+// const password = "P";
 
-if (userName.length <= 6){
-    console.log("userName harus minimal 6 karakter");
-}
-if (password.length <= 8){
-console.log("password harus minimal 8 karakter");
-}
+// if (userName.length <= 6){
+//     console.log("userName harus minimal 6 karakter");
+// }
+// if (password.length <= 8){
+// console.log("password harus minimal 8 karakter");
+// }
 
 function gantiString() {
     var x = document.getElementById("password");
@@ -29,12 +29,37 @@ function gantiString() {
     }
   }
 
-let dataSoal6 =  [];
-Soal6value1 = document.getElementById("userName").value;
-Soal6value2 = document.getElementById("password").value;
-dataSoal6.push(Soal6value1, Soal6value2);
+// let dataSoal6 =  [];
+// Soal6value1 = document.getElementById("userName").value;
+// Soal6value2 = document.getElementById("password").value;
+// dataSoal6.push(Soal6value1, Soal6value2);
 
-function form6() {
-  var userName=document.getElementById("showuserName").value;
-  var password=document.getElementById("showPassword").value;
-}
+// function form6() {
+//   var userName=document.getElementById("showuserName").value;
+//   var password=document.getElementById("showPassword").value;
+// }
+
+ function validate() {
+              var username = document.getElementById("userName").value;
+              var password = document.getElementById("password").value;
+              if (username.length <= 6){
+              alert("userName harus minimal 6 karakter");
+              return false;
+              }
+              if (password.length <= 8){
+              alert("password harus minimal 8 karakter");
+              return false;
+              }
+              if (username == null || username == "") {
+              return false;
+              }
+              if (password == null || password == "") {
+              return false;
+              }
+              alert('Login sukses.');
+              return true;
+          } 
+
+
+
+
