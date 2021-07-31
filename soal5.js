@@ -37,9 +37,5 @@ var screen = document.getElementById("tweets");
 function updateTweet() {
     inputArray.push(input.value);
     screen.innerHTML = input.value; 
-    screen.innerHTML = inputArray + "<br/>";
+    screen.innerHTML = inputArray.map(s => '<p>' + s + '</p>').join('');
 };
-
-// function display() {
-//           screen.innerHTML = inputArray;
-//  };
