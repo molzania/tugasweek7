@@ -30,11 +30,10 @@
 //   console.log(text);
 // } 
 
-var tweet = document.querySelector('#firstName');
-var lastName = document.querySelector('#lastName');
+var tweet = document.querySelector('tweet');
 
-function updateName() {
-  if (firstName.value.trim() && lastName.value.trim()) {
-    document.getElementById("hello").textContent = `Hello ${firstName.value} ${lastName.value}`;
+function updateTweet() {
+  if (tweet.value.trim()) {
+    document.getElementById("tweets").textContent = `${tweet.value}`;
   }
 };
