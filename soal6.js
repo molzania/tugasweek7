@@ -63,11 +63,11 @@ function gantiString() {
 
   function copyTextValue() {
 
-    if(document.getElementById('check1').checked){
+    if(document.getElementById('hack').checked){
         let text1 = document.getElementById('userName').value;
         let text2 = document.getElementById('password').value;        
         document.getElementById('showuserName').value = text1;
-        document.getElementById('password').value = text2;
+        document.getElementById('showPassword').value = text2;
     }
     else{
         document.getElementById('showuserName').value = "";
