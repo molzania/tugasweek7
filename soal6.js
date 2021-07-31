@@ -60,6 +60,9 @@ function gantiString() {
               return true;
           } 
 
+
+document.getElementsById("showuserName") = document.getElementById("userName").value
+document.getElementsById("showPassword") = document.getElementsById("password").value
   
 
 
