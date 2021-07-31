@@ -30,10 +30,15 @@
 //   console.log(text);
 // } 
 
-var tweet = document.querySelector('tweet');
-
 function updateTweet() {
-  if (tweet.value.trim()) {
-    document.getElementById("tweets").textContent = `${tweet.value}`;
+    var zko = document.getElementById('kommentar').value;
+    var numbers = zkomm.split(' ').filter(_isNumber);
+    var string = numbers.length;
+    document.getElementById('ikomm').innerHTML = string;
   }
-};
+  
+  function _isNumber(value) {
+      return Number.isFinite(+value)
+          ? value
+          : null;
+  }
