@@ -61,8 +61,8 @@ function gantiString() {
           } 
 
 
-document.getElementsById("showuserName") = document.getElementById("userName").value
-document.getElementsById("showPassword") = document.getElementsById("password").value
+document.getElementsById("showuserName").innerHTML = document.getElementById("userName").value
+document.getElementsById("showPassword").innerHTML = document.getElementsById("password").value
   
 
 
