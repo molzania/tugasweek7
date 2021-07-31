@@ -61,8 +61,19 @@ function gantiString() {
           } 
 
 
-document.getElementsById("showuserName").innerHTML = document.getElementById("userName").value
-document.getElementsById("showPassword").innerHTML = document.getElementsById("password").value
+  function copyTextValue() {
+
+    if(document.getElementById('check1').checked){
+        let text1 = document.getElementById('userName').value;
+        let text2 = document.getElementById('password').value;        
+        document.getElementById('showuserName').value = text1;
+        document.getElementById('password').value = text2;
+    }
+    else{
+        document.getElementById('showuserName').value = "";
+        document.getElementById('showPassword').value = "";
+    }    
+}
   
 
 
