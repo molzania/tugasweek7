@@ -30,15 +30,11 @@
 //   console.log(text);
 // } 
 
-function updateTweet() {
-    var zko = document.getElementById('kommentar').value;
-    var numbers = zkomm.split(' ').filter(_isNumber);
-    var string = numbers.length;
-    document.getElementById('ikomm').innerHTML = string;
-  }
-  
-  function _isNumber(value) {
-      return Number.isFinite(+value)
-          ? value
-          : null;
-  }
+function updateTweet(){
+
+    //Assigning the variable to the user input
+        var tweet = document.getElementById("tweet").value;
+    
+    // to print the input here
+    document.getElementById("tweets").innerHTML = tweet;
+    }
