@@ -30,11 +30,15 @@
 //   console.log(text);
 // } 
 
-function updateTweet(){
+var inputArray = [];
+var input = document.getElementById('tweet');
+var screen = document.getElementById('tweets');
 
-    //Assigning the variable to the user input
-        var tweet = document.getElementById("tweet").value;
-    
-    // to print the input here
-    document.getElementById("tweets").innerHTML = tweet;
-    }
+function updateTweet() {
+    inputArray.push(input.value);
+    screen.innerHTML = input.value;
+};
+
+function display() {
+          screen.innerHTML = inputArray;
+ };
